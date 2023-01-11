@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 4000
+const port = process.env.PORT || 4000
 const stripe = require('stripe')('sk_test_51M9RNdBlBeMRnW7CLsA7xYolR754Y3SuigAo3HSD0WCxJls1HpVp6ZtR1BN3mzffHBL8Og7AVLNP6chDEKd7c68g00ZNyKfoGR');
 
 app.get('/', async(req, res) => {
